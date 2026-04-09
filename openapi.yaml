@@ -1,0 +1,400 @@
+openapi: 3.0.3
+info:
+  title: Referensdata API
+  version: 1.0.0
+  description: API för att hämta referensdata.
+
+paths:
+  /idtyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getIdtyper
+      summary: Hämta idtyper
+      description: Hämta idtyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /idtyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getIdtyp
+      summary: Hämta idtyp
+      description: Hämta idtyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /yrkandestatus:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getYrkandestatusar
+      summary: Hämta yrkandestatus
+      description: Hämta yrkandestatus
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /yrkandestatus/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getYrkandestatus
+      summary: Hämta yrkandestatus
+      description: Hämta yrkandestatus
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /avsiktstyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getAvsiktstyper
+      summary: Hämta avsiktstyper
+      description: Hämta avsiktstyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /avsiktstyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getAvsiktstyp
+      summary: Hämta avsiktstyp
+      description: Hämta avsiktstyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /avslutstyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getAvslutstyper
+      summary: Hämta avslutstyper
+      description: Hämta avslutstyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /avslutstyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getAvslutstyp
+      summary: Hämta avslutstyp
+      description: Hämta avslutstyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /beslutstyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getBeslutstyper
+      summary: Hämta beslutstyper
+      description: Hämta beslutstyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /beslutstyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getBeslutstyp
+      summary: Hämta beslutstyp
+      description: Hämta beslutstyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /beslutsutfallstyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getBeslutsutfallstyper
+      summary: Hämta beslutsutfallstyper
+      description: Hämta beslutsutfallstyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /beslutsutfallstyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getBeslutsutfallstyp
+      summary: Hämta beslutsutfallstyp
+      description: Hämta beslutsutfallstyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /uppgiftstatustyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getUppgiftstatustyper
+      summary: Hämta uppgiftstatustyper
+      description: Hämta uppgiftstatustyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /uppgiftstatustyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getUppgiftstatustyp
+      summary: Hämta uppgiftstatustyp
+      description: Hämta idtyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /fssainformationstyp:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getFSSAinformationstyper
+      summary: Hämta FSSAinformationstyper
+      description: Hämta FSSAinformationstyper
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /fssainformationstyp/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getFSSAinformationstyp
+      summary: Hämta FSSAinformationstyp
+      description: Hämta FSSAinformationstyp
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /yrkanderoll:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getYrkanderoller
+      summary: Hämta yrkanderoller
+      description: Hämta yrkanderoller
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /yrkanderoll/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getYrkanderoll
+      summary: Hämta yrkanderoll
+      description: Hämta yrkanderoll
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+  /erbjudande:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getErbjudanden
+      summary: Hämta erbjudanden
+      description: Hämta erbjudanden
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Referensdata'
+
+  /erbjudande/{referensdata_id}:
+    get:
+      tags: [ ReferensdataController ]
+      operationId: getErbjudande
+      summary: Hämta erbjudande
+      description: Hämta erbjudande
+      parameters:
+        - name: referensdata_id
+          in: path
+          required: true
+          description: Unikt ID för referensdata
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Förfrågan genomförd OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Referensdata'
+
+components:
+  schemas:
+
+    Referensdata:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unikt ID för referensdata
+        kod:
+          type: string
+          description: Unikt värde som har en 1-till-1 relation till ID
+        namn:
+          type: string
+          description: Fullständigt namn för referensdata
+      required:
+        - id
+        - kod
+        - namn
+      example:
+        id: "24d4b787-efca-498c-9ffb-4f198d22b066"
+        kod: "ABC-123"
+        namn: "Testdata"
