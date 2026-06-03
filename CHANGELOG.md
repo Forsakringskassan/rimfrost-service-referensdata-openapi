@@ -1,3 +1,13 @@
+## 1.0.1 (2026-06-03)
+
+### Bug Fixes
+
+-  **deps**  update jackson monorepo to v2.21.3 ([6d299](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/6d299410e3c34d6) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.5.1 ([90963](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/909636c08ed25aa) renovate[bot])  
+- update gradle to v9.5.0 ([34698](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/346989a273ca5c7) renovate[bot])  
 ## 1.0.0 (2026-04-28)
 
 ### Breaking changes
