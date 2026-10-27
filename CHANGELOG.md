@@ -1,3 +1,17 @@
+## 1.1.2 (2026-10-27)
+
+### Bug Fixes
+
+-  Replace github workflows ([473c3](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/473c3bc644c1a4d) Lars Persson)  
+-  **deps**  update jackson monorepo to v2.22.3 ([2fbf6](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/2fbf6f3a7dfd020) renovate[bot])  
+-  **deps**  update dependency org.openapitools:jackson-databind-nullable to v0.2.12 ([61320](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/61320bacad4b607) renovate[bot])  
+
+### Dependency updates
+
+- update forsakringskassan/.github digest to cbd74f1 ([9fe20](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/9fe209d9a304372) renovate[bot])  
+- update gradle to v9.8.1 ([d7f85](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/d7f858de4a6e909) renovate[bot])  
+- update gradle to v9.8.0 ([ed69e](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/ed69e4bb9ca76a0) renovate[bot])  
+- update forsakringskassan/.github digest to bfb01f7 ([2e684](https://github.com/Forsakringskassan/rimfrost-service-referensdata-openapi/commit/2e684f35461625f) renovate[bot])  
 ## 1.1.1 (2026-09-21)
 
 ### Bug Fixes
